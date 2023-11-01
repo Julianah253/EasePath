@@ -52,13 +52,25 @@ const Form = () => {
                 <label for="amount">Amount*</label><br/>
             </div>
             <div className="formlayout3" style={{display:'flex', gap: '5px'}}>
-                <input type="text" id="duration" name="duration" placeholder="Loan duration.."/><br/>
+                <select>
+                    <option> 1 Month </option>
+                    <option> 2 Months </option>
+                    <option> 3 Months </option>
+                    <option> 4 Months </option>
+                    <option> 5 Months </option>
+                    <option> 6 Months </option>
+                    <option> Other </option>
+                </select>
                 <input type="text" id="amount" name="amount" placeholder="Loan amount.."/><br/>
             </div>
 
             <input type="submit" value="Submit" style={{fontSize: '20px'}}/>
          </form>
          </div>
+         <br/><br/><br/><br/>
+         <section className="howitworks" style={{width: '100%', backgroundColor: '#f5f1f1', height: '400px'}}>
+            <h1 style={{color: '#1d00ff', fontSize: '42px', textAlign: 'center', fontWeight: '900', display: 'grid', alignItems:'center', alignContent:'center', justifyItems: 'center', justifyContent: 'center'}}> See how it works </h1>
+         </section>
     </div>
   )
 }
