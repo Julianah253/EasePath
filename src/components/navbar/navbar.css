@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Catamaran;
+  border: 0;
+}
+* ::-moz-selection {
+  background: #4A33FF;
+  color: white;
+}
+* ::selection {
+  background: #4A33FF;
+  color: white;
+}
+
+nav {
+  background-image: url("/public/easepath-students-happy-studying-abroad.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+nav .navbar .navbar_logo img {
+  width: 200px;
+  height: auto;
+}
+nav .navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav .navbar ul li {
+  list-style: none;
+}
+nav .navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+}
+nav .navbar ul .button {
+  border: 2px solid #4A33FF;
+  background-color: #4A33FF;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+}
+nav .navbar ul .button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.overlayy {
+  background-color: rgba(0, 0, 0, 0.4705882353); /* Change the color and opacity as needed */
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 750px;
+}
+
+.navbar.scrolled {
+  background-color: white;
+}
+
+.navbar_links.scrolled a:not(.button) {
+  color: #000;
+}/*# sourceMappingURL=navbar.css.map */
