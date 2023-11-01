@@ -18,7 +18,7 @@ const FAQ = ({ question, answer }) => {
     fontSize: '20px', // Adjust as needed
     fontWeight: 'bold', // Makes the text bold
     color: '#1d00ff', // Sets the text color to #1d00ff
-    width: '800px'
+    width: '900px'
   };
 
   const answerStyle = {
@@ -93,8 +93,8 @@ const Faq = () => {
   return (
     <div className="faq" style={containerStyle}>
       <section className="FAQ">
-        <h1 style={{textAlign: 'center', fontSize: '42px', color: '#1d00ff'}}> Find answers and general<br/> information </h1>
-        <p> A list of frequently asked questions to help you understand how it works. </p>
+        <h1 style={{textAlign: 'center', fontSize: '42px', color: '#1d00ff'}}> Find answers and general<br/>information </h1>
+        <p style={{textAlign: 'center', fontSize: '19px'}}> A list of frequently asked questions to help you understand how it<br/>works. </p>
         {faqs.map((faq, i) => (
           <FAQ key={i} question={faq.question} answer={faq.answer} />
         ))}
