@@ -45,3 +45,16 @@ input[type=text], select {
     display: flex;
     gap: 288px;
 }
+
+.howitworks
+{
+    display: grid;
+    padding-top: 6rem;
+    height: 350px;
+
+    span 
+    {
+        margin-top: -80px;
+    }
+}
+

@@ -1,5 +1,6 @@
 import React from 'react'
 import './form.css'
+
 const Form = () => {
   return (
     <div>
@@ -68,9 +69,11 @@ const Form = () => {
          </form>
          </div>
          <br/><br/><br/><br/>
-         <section className="howitworks" style={{width: '100%', backgroundColor: '#f5f1f1', height: '400px'}}>
-            <h1 style={{color: '#1d00ff', fontSize: '42px', textAlign: 'center', fontWeight: '900', display: 'grid', alignItems:'center', alignContent:'center', justifyItems: 'center', justifyContent: 'center'}}> See how it works </h1>
+         <section className="howitworks" style={{width: '100%', backgroundColor: '#f5f1f1'}}>
+            <h1 style={{color: '#1d00ff', fontSize: '42px', textAlign: 'center', fontWeight: '900'}}> See how it works </h1>
+            <span style={{fontSize: '20px', textAlign: 'center', wordSpacing:'2px'}}> Use the loan calculator to get started </span>
          </section>
+         <br/><br/><br/><br/>
     </div>
   )
 }

@@ -39,4 +39,13 @@ div {
 .formlayout3label {
   display: flex;
   gap: 288px;
+}
+
+.howitworks {
+  display: grid;
+  padding-top: 6rem;
+  height: 350px;
+}
+.howitworks span {
+  margin-top: -80px;
 }/*# sourceMappingURL=form.css.map */
