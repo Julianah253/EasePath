@@ -93,7 +93,7 @@ nav .navbar ul li a {
     justify-content: space-around;
     width: 100%;
   }
-  ul li {
+  .navbar_links li {
     display: none;
   }
   .nav {

@@ -22,10 +22,10 @@ const FAQ = ({ question, answer }) => {
   };
 
   const answerStyle = {
-    maxHeight: isOpen ? '100vh' : '0',
+    maxHeight: isOpen ? 'none' : '0',
     transition: 'maxHeight 0.5s ease-in-out',
     backgroundColor: '#fff',
-    padding: isOpen ? '10px' : '0',
+    padding: isOpen ? '13px' : '0',
     borderRadius: '10px',
     fontSize: '15px' // Adjust as needed
   };
@@ -46,7 +46,7 @@ const Faq = () => {
     {
       question: '1. Where do I start?',
       answer: (
-        <ul style={{listStyleType: 'disc'}}>
+        <ul style={{listStyleType: 'disc', padding: '15px'}}>
           <li> Register </li>
           <li> Create an account </li>
           <li> Get Funded </li>
