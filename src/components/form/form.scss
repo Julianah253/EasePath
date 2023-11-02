@@ -53,7 +53,59 @@ input[type=text], select {
 
 form
 {
-  display: block;
+   display: block;
    margin-left: auto;
    margin-right: auto;
+   padding: 0rem 20rem 0rem 20rem;
+   width: auto;
+}
+
+.form 
+{
+  h1 
+  {
+    color: #1d00ff;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 900;
+  } 
+  
+  p 
+  {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .formlayout1,
+  .formlayout2,
+  .formlayout3label {
+      display: block;
+      gap: 200px;
+  }
+
+  .formlayout3label 
+  {
+    // display: flex !important;
+  }
+  .form h1 {
+      font-size: 28px;
+      margin-top: -10px;
+  }
+
+  .form p {
+      font-size: 16px;
+  }
+
+  form {
+      padding: 0rem 1rem; /* adjust as needed */
+      width: auto;
+      // display: grid;
+  }
+
+  input[type=text], select {
+      font-size: 13px; /* adjust as needed */
+  }
 }

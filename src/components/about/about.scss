@@ -102,7 +102,7 @@
 
 
 .works {
-    // position: relative;
+    position: relative;
     background-image: url('/public/easepath-home-page-banner.jpg'); /* replace with your image URL */
     height: 700px; /* adjust as needed */
 }
@@ -121,6 +121,14 @@
         color: #ffffff;
         font-size: 40px;
         padding-top: 200px;
+    }
+
+    p 
+    {
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+        margin-bottom: 90px;
     }
 }
 
@@ -329,7 +337,9 @@
     .works {
         position: relative;
         background-image: url('/public/easepath-home-page-banner.jpg'); /* replace with your image URL */
-        height: 700px; /* adjust as needed */
+        height: 1250px; /* adjust as needed */
+        background-size: cover;
+        background-position: center;
     }
 
     .overlay {
@@ -344,8 +354,7 @@
 
     .numbers
     {
-        display: flex;
-        gap: 130px;
+        gap: 10px;
 
         .circle 
         {
@@ -471,4 +480,30 @@
 .numbers {
     display: grid;
 }
+}
+@media only screen and (max-width: 600px) {
+    .works {
+        position: relative;
+        background-image: url('/public/easepath-home-page-banner.jpg'); /* replace with your image URL */
+        // height: 100%; /* adjust as needed */
+        .overlay 
+        {
+            h1
+            {
+                font-size: 28px;
+                padding-top: 100px;;
+            }
+
+            p 
+            {
+                font-size: 17px !important;
+                margin-bottom: 45px;
+            }
+
+            .numbers
+            {
+                display: grid !important;
+            }
+        }
+    }
 }
