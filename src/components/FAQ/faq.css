@@ -13,8 +13,7 @@
 
 @media only screen and (max-width: 600px) {
   .faq {
-    height: 1000px;
-    overflow: hidden;
+    height: 1300px;
   }
   .faq .FAQ {
     height: 1310px;

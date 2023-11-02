@@ -70,7 +70,7 @@ const Faq = () => {
       answer: 'Yes, you can and get a commission.',   
     },
     {
-      question: '6. Do I need collatera?',
+      question: '6. Do I need collateral?',
       answer: `You don't need collateral for this`,   
     },
     {
