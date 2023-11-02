@@ -8,17 +8,15 @@
         background: #4A33FF;
         color: white;
     }
-    
+    // border: 2px solid black;
 }
 
 nav
 {
     background-image: url('/public/easepath-students-happy-studying-abroad.jpg');
-    // background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     height: 650px;
-    // width: 400px;
     
     .navbar
     {
@@ -148,7 +146,6 @@ nav
     .nav 
     {
         overflow-x: hidden;
-        width: 400px;
     }
 
     nav .navbar {
@@ -253,5 +250,15 @@ nav
 @media only screen and (min-width: 1025px) {
      .fa-solid.fa-bars {
         display: none !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar
+    {
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 }

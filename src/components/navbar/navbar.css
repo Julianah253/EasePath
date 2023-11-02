@@ -98,7 +98,6 @@ nav .navbar ul li a {
   }
   .nav {
     overflow-x: hidden;
-    width: 400px;
   }
   nav .navbar {
     display: flex;
@@ -188,5 +187,13 @@ nav .navbar ul li a {
 @media only screen and (min-width: 1025px) {
   .fa-solid.fa-bars {
     display: none !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }/*# sourceMappingURL=navbar.css.map */
