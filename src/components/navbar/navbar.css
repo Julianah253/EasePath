@@ -185,4 +185,9 @@ nav .navbar ul li a {
     justify-content: center !important;
     padding: 25px !important;
   }
+}
+@media only screen and (min-width: 1025px) {
+  .icon {
+    display: none;
+  }
 }/*# sourceMappingURL=navbar.css.map */

@@ -48,7 +48,7 @@ const About = () => {
 
         <section className="works">
             <div className="overlay">
-                <h1 style={{textAlign: 'center', color: '#ffffff', fontSize: '40px', paddingTop: '200px'}}> How it Works </h1>
+                <h1> How it Works </h1>
                 <p style={{textAlign: 'center', color: '#ffffff', fontSize: '20px'}}> Somethings are as easy as they seem. The process to your easy path<br/> begins with these processes. </p>
                 <br/><br/><br/><br/>
 
