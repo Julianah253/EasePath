@@ -15,20 +15,19 @@ const FAQ = ({ question, answer }) => {
     margin: '10px 0',
     cursor: 'pointer',
     transition: 'all 0.3s ease',
-    fontSize: '20px', // Adjust as needed
-    fontWeight: 'bold', // Makes the text bold
-    color: '#1d00ff', // Sets the text color to #1d00ff
+    fontSize: '15px',
+    fontWeight: 'bold', 
+    color: '#1d00ff', 
     width: '900px'
   };
 
   const answerStyle = {
     maxHeight: isOpen ? '100vh' : '0',
-    // overflow: 'hidden',
     transition: 'maxHeight 0.5s ease-in-out',
     backgroundColor: '#fff',
     padding: isOpen ? '10px' : '0',
     borderRadius: '10px',
-    fontSize: '18px' // Adjust as needed
+    fontSize: '15px' // Adjust as needed
   };
 
   return (

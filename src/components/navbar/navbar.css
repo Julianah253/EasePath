@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Catamaran;
-  border: 0;
+  border: none;
 }
 * ::-moz-selection {
   background: #4A33FF;
@@ -19,13 +19,13 @@ nav {
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
-  height: 750px;
+  height: 650px;
 }
 nav .navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100px;
+  height: 90px;
   position: fixed;
   width: 100%;
   transition: all 0.5s ease;
@@ -48,19 +48,6 @@ nav .navbar ul li a {
   font-weight: 700;
   font-size: 17px;
 }
-nav .navbar ul .button {
-  border: 2px solid #4A33FF;
-  background-color: #4A33FF;
-  padding: 15px;
-  width: 180px;
-  text-align: center;
-}
-nav .navbar ul .button a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 16px;
-}
 
 .overlayy {
   background-color: rgba(0, 0, 0, 0.4705882353); /* Change the color and opacity as needed */
@@ -70,7 +57,7 @@ nav .navbar ul .button a {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 750px;
+  height: 650px;
 }
 
 .navbar.scrolled {
@@ -79,4 +66,52 @@ nav .navbar ul .button a {
 
 .navbar_links.scrolled a:not(.button) {
   color: #000;
+}
+
+.buttons {
+  position: relative;
+  border: 2px solid #4A33FF;
+  background-color: #4A33FF;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.buttons:hover a {
+  color: #A499FF;
+}
+
+.buttons:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #A499FF;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px 0px rgba(220, 196, 196, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.buttons:hover {
+  color: #fff;
+}
+
+.buttons:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.buttons:active {
+  top: 2px;
 }/*# sourceMappingURL=navbar.css.map */
