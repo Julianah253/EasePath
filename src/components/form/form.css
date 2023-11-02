@@ -24,10 +24,6 @@ input[type=submit]:hover {
   background-color: #A499FF;
 }
 
-div {
-  border-radius: 5px;
-}
-
 .formlayout1 {
   display: flex;
 }
