@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Catamaran;
-
     ::selection {
         background: #4A33FF;
         color: white;
@@ -19,7 +18,7 @@ nav
     background-size: cover;
     background-position: center;
     height: 650px;
-
+    // width: 400px;
     .navbar
     {
         display: flex;
@@ -251,7 +250,7 @@ nav
 }
 
 @media only screen and (min-width: 1025px) {
-    .icon {
+    .fa-solid .fa-bars {
         display: none;
     }
 }

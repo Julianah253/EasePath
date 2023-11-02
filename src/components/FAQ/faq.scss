@@ -1,4 +1,77 @@
-.FAQ
+.faq 
 {
-    height: 1310px;
+    .FAQ
+    {
+        height: 1310px;
+        // width: 20px;
+        
+        h1 
+        {
+            text-align: center;
+            font-size: 42px;
+            color: #1d00ff;
+        }
+
+        p 
+        {
+            text-align: center;
+            font-size: 19px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .faq 
+    {
+        height: 1000px;
+        overflow: hidden;
+
+        .FAQ
+        {
+            height: 1310px;
+            width: 390px;
+            
+            h1 
+            {
+                text-align: center;
+                font-size: 28px;
+                color: #1d00ff;
+            }
+
+            p 
+            {
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// @media only screen and (max-width: 600px) {
+//     .questionStyle {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         box-shadow: 0 25px 98px 0 rgba(0,0,0,0.1);
+//         border-radius: 10px;
+//         background-color: #FEFEFE;
+//         padding: 30px;
+//         margin: 10px 0;
+//         cursor: pointer;
+//         transition: all 0.3s ease;
+//         font-size: 15px;
+//         font-weight: bold; 
+//         color: #1d00ff; 
+//         width: 900px;
+//       };
+// }
+
+@media only screen and (max-width: 600px) {
+    .questionStyle
+    {
+        width: 400px !important; // adjust as needed
+        padding: 20px; // adjust as needed
+        font-size: 13px; // adjust as needed
+        // add any other style adjustments for smaller screens here
+    }
 }

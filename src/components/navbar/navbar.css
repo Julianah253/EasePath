@@ -187,7 +187,7 @@ nav .navbar ul li a {
   }
 }
 @media only screen and (min-width: 1025px) {
-  .icon {
+  .fa-solid .fa-bars {
     display: none;
   }
 }/*# sourceMappingURL=navbar.css.map */

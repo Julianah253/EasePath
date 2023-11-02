@@ -3,7 +3,7 @@ import './form.css'
 
 const Form = () => {
     return (
-        <div>
+        <div className='headingandform'>
             <section className="form">
                 <h1> Get proof of funds of up to ₦10 million </h1>
                 <p> Fill all fields and let's get you on your way as soon as possible </p>
@@ -15,7 +15,7 @@ const Form = () => {
                     <input type="text" id="fname" name="fullname" placeholder="Your name.." /><br />
 
                     {/* formlayout 1 */}
-                    <div className="formlayout1label" style={{ display: 'flex', gap: '300px' }}>
+                    <div className="formlayout1label">
                         <label for="email">Email*</label><br />
                         <label for="phone">Phone Number*</label><br />
                     </div>
@@ -25,7 +25,7 @@ const Form = () => {
                     </div>
 
                     {/* formlayout 2 */}
-                    <div className="formlayout2label" style={{ display: 'flex', gap: '300px' }}>
+                    <div className="formlayout2label">
                         <label for="state">State*</label><br />
                         <label for="purpose">Purpose of Loan*</label><br />
                     </div>
@@ -96,8 +96,8 @@ const Form = () => {
                 </form>
             </div>
             <br /><br /><br /><br />
-            <section className="howitworks" style={{ width: '100%', backgroundColor: '#f5f1f1' }}>
-                <h1 style={{ color: '#1d00ff', fontSize: '42px', textAlign: 'center', fontWeight: '900' }}> See how it works </h1>
+            <section className="howitworks">
+                <h1> See how it works </h1>
                 <span style={{ fontSize: '20px', textAlign: 'center', wordSpacing: '2px' }}> Use the loan calculator to get started </span>
             </section>
             <br /><br /><br /><br />

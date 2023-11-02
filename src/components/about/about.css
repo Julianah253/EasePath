@@ -187,6 +187,7 @@
     justify-content: center;
     gap: 1%;
     height: 800px;
+    width: 400px;
   }
   .about .leftdiv h2 {
     color: #1d00ff;

@@ -1,3 +1,39 @@
-.FAQ {
+.faq .FAQ {
   height: 1310px;
+}
+.faq .FAQ h1 {
+  text-align: center;
+  font-size: 42px;
+  color: #1d00ff;
+}
+.faq .FAQ p {
+  text-align: center;
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 600px) {
+  .faq {
+    height: 1000px;
+    overflow: hidden;
+  }
+  .faq .FAQ {
+    height: 1310px;
+    width: 390px;
+  }
+  .faq .FAQ h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #1d00ff;
+  }
+  .faq .FAQ p {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .questionStyle {
+    width: 400px !important;
+    padding: 20px;
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=faq.css.map */

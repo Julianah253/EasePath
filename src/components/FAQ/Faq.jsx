@@ -18,7 +18,7 @@ const FAQ = ({ question, answer }) => {
     fontSize: '15px',
     fontWeight: 'bold', 
     color: '#1d00ff', 
-    width: '900px'
+    width: '800px'
   };
 
   const answerStyle = {
@@ -32,7 +32,7 @@ const FAQ = ({ question, answer }) => {
 
   return (
     <div>
-      <div style={questionStyle} onClick={() => setIsOpen(!isOpen)}>
+      <div className='questionStyle' style={questionStyle} onClick={() => setIsOpen(!isOpen)}>
         <span>{question}</span>
         <span>{isOpen ? '-' : '+'}</span>
       </div>
@@ -92,8 +92,8 @@ const Faq = () => {
   return (
     <div className="faq" style={containerStyle}>
       <section className="FAQ">
-        <h1 style={{textAlign: 'center', fontSize: '42px', color: '#1d00ff'}}> Find answers and general<br/>information </h1>
-        <p style={{textAlign: 'center', fontSize: '19px'}}> A list of frequently asked questions to help you understand how it<br/>works. </p>
+        <h1> Find answers and general information </h1>
+        <p> A list of frequently asked questions to help you understand how it<br/>works. </p>
         {faqs.map((faq, i) => (
           <FAQ key={i} question={faq.question} answer={faq.answer} />
         ))}

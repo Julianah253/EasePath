@@ -25,13 +25,24 @@ input[type=text], select {
     border-radius: 5px;
   }
 
+
 .formlayout1
 {
     display: flex;
 }
+.formlayout1label
+{
+  display: flex;
+  gap: 300px;
+}
 .formlayout2
 {
     display: flex;
+}
+.formlayout2label
+{
+  display: flex;
+  gap: 300px;
 }
 .formlayout3label
 {
@@ -44,6 +55,16 @@ input[type=text], select {
     display: grid;
     padding-top: 6rem;
     height: 350px;
+    width: 100%;
+    background-color: #f5f1f1;
+
+    h1 
+    {
+      color: #1d00ff;
+      font-size: 42px;
+      text-align: center;
+      font-weight: 900;
+    }
 
     span 
     {
@@ -79,18 +100,30 @@ form
 }
 
 @media only screen and (max-width: 600px) {
-  .formlayout1,
-  .formlayout2,
-  .formlayout3label {
-      display: block;
-      gap: 200px;
-  }
+  // .formlayout1,
+  // .formlayout2,
+  // .formlayout3label {
+  //     display: block;
+  //     gap: 200px;
+  // }
 
   .formlayout3label 
   {
-    // display: flex !important;
+    display: flex !important;
+    gap: 60px
   }
-  .form h1 {
+  .formlayout2label
+  {
+    display: flex !important;
+    gap: 68px;
+  }
+  .formlayout1label
+  {
+    display: flex;
+    gap: 69px;
+  }
+    .form h1 
+  {
       font-size: 28px;
       margin-top: -10px;
   }
@@ -108,4 +141,28 @@ form
   input[type=text], select {
       font-size: 13px; /* adjust as needed */
   }
+
+  
+.howitworks
+{
+    display: grid;
+    padding-top: 6rem;
+    height: 250px;
+    width: 390px;
+    background-color: #f5f1f1;
+
+    h1 
+    {
+      color: #1d00ff;
+      font-size: 28px;
+      text-align: center;
+      font-weight: 900;
+    }
+
+    span 
+    {
+        margin-top: -40px;
+        font-size: 18px !important;
+    }
+}
 }
