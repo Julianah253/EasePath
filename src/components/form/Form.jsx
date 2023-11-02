@@ -10,7 +10,7 @@ const Form = () => {
          </section>
          
          <div>
-         <form style={{padding: '0rem 20rem 0rem 20rem', width: '1700px', alignContent: 'center'}}>
+         <form style={{padding: '0rem 20rem 0rem 20rem', width: '1700px'}}>
             <label for="fname">Full Name*</label><br/>
             <input type="text" id="fname" name="fullname" placeholder="Your name.."/><br/>
             
