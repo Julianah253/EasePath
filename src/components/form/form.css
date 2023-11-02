@@ -87,15 +87,15 @@ form {
 @media only screen and (max-width: 600px) {
   .formlayout3label {
     display: flex !important;
-    gap: 60px;
+    gap: 69px;
   }
   .formlayout2label {
     display: flex !important;
-    gap: 68px;
+    gap: 80px;
   }
   .formlayout1label {
     display: flex;
-    gap: 69px;
+    gap: 80px;
   }
   .form h1 {
     font-size: 28px;
