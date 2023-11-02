@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './navbar.css'
-import './nav'
+import './nav.js'
 import Button from '../button/Button'
 
 const Navbar = () => {
@@ -32,6 +32,7 @@ const Navbar = () => {
                             <li><a href='#'> Loan Calculator </a></li>
                             <li><a href='#'> FAQ </a></li>
                             <Button/>
+                            {scrolled ?  <div className="icon"> <i style={{color: '#000', fontSize: '40px'}} class="fa-solid fa-bars"></i> </div> :  <div className="icon"> <i style={{color: '#fff', fontSize: '40px'}} class="fa-solid fa-bars"></i> </div>}
                         </ul>
                     </div>
 

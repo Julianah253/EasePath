@@ -3,9 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    // border: 2px solid #4A33FF;
     font-family: Catamaran;
-    border: none;
 
     ::selection {
         background: #4A33FF;
@@ -21,7 +19,6 @@ nav
     background-size: cover;
     background-position: center;
     height: 650px;
-    
 
     .navbar
     {
@@ -32,7 +29,7 @@ nav
         position: fixed;
         width: 100%;
         transition: all 0.5s ease;
-
+        z-index: 10;
 
 
         .navbar_logo
@@ -81,13 +78,12 @@ nav
     background-color: white;
   }
   
-  .navbar_links.scrolled a:not(.button) {
+.navbar_links.scrolled a:not(.button) {
     color: #000;
-  }
+}
 
-
-  .buttons {
-    position: relative;
+.buttons {
+    // position: relative;
     border: 2px solid #4A33FF;
     background-color: #4A33FF;
     padding: 15px;
@@ -103,35 +99,153 @@ nav
     font-size: 16px;
 }
 
-.buttons:hover a {
-    color: #A499FF;
-}
+// .buttons:hover a {
+//     color: #A499FF; /* Add this line */
+// }
 
-.buttons:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1; 
-    background-color: #A499FF; 
-    border-radius: 5px;
-     box-shadow:inset 2px 2px 2px 0px rgba(220, 196, 196, 0.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    transition: all 0.3s ease;
-}
+// .buttons:after {
+//     position: absolute;
+//     content: "";
+//     width: 0;
+//     height: 100%;
+//     top: 0;
+//     right: 0;
+//     z-index: 1; 
+//     background-color: #A499FF; 
+//     border-radius: 5px;
+//      box-shadow:inset 2px 2px 2px 0px rgba(220, 196, 196, 0.5),
+//      7px 7px 20px 0px rgba(0,0,0,.1),
+//      4px 4px 5px 0px rgba(0,0,0,.1);
+//     transition: all 0.3s ease;
+// }
 
-.buttons:hover {
-    color: #fff;
-}
+// .buttons:hover {
+//     color: #fff;
+// }
 
-.buttons:hover::after {
-    left: 0;
-    width: 100%;
-}
+// .buttons:hover::after {
+//     left: 0;
+//     width: 100%;
+// }
 
 .buttons:active {
     top: 2px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar_links {
+        display: none;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    ul li 
+    {
+        display: none;
+    }
+
+    .nav 
+    {
+        overflow-x: hidden;
+        width: 400px;
+    }
+
+    nav .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 60px;
+        position: fixed;
+        width: 100%;
+        transition: all 0.5s ease;
+        padding: 6px;
+        padding-top: 25px;
+        gap: 35%
+    }
+
+    nav .navbar .navbar_logo img {
+        width: 190px;
+        height: auto;
+    }
+
+    .overlayy {
+        background-color: rgba(0, 0, 0, 0.4705882353);
+        opacity: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 365px;
+    }
+
+    nav {
+        background-size: cover;
+        height: 365px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    nav .navbar .navbar_logo img {
+        width: 160px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    nav .navbar ul .icon i {
+        color: rgb(255, 255, 255);
+        font-size: 32px !important;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    nav .overlayy .herotext{
+        padding-top: 9rem !important;
+        margin-left: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    nav .overlayy .herotext h1{
+        font-size: 28px !important;
+        color: rgb(255, 255, 255)  !important;
+        font-weight: 800 !important;
+        line-height: 35px  !important;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    nav .overlayy .herotext p{
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        color: rgb(255, 255, 255) !important;
+        line-height: 45px !important;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    nav .overlayy .herotext li {
+        height: 50px !important;
+        padding: 8px !important;
+
+    }
+}
+
+@media only screen and (max-width: 600px){
+.about .leftdiv h2 {
+    color: #1d00ff !important;
+    font-weight: 800 !important;
+    font-size: 28px !important;
+ }
+}
+
+@media only screen and (max-width: 600px){
+.about {
+    display: grid  !important;
+    justify-content: center  !important;
+    padding: 25px  !important;
+}
 }

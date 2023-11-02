@@ -6,8 +6,9 @@ const About = () => {
     <div>
         <div className="about">
             <div className="leftdiv">
-                <h2> About us </h2><br/>
-                <p> Who we are and why we exist </p>
+            <h2 class="spacing"> About us </h2>
+            <p class="spacing"> Who we are and why we exist </p>
+
             </div>
             <div className="rightdiv">
                 <span> Easepath International is a company built under the survey of how to solve problems <br/> and meet needs. Easepath was born from feedback gotten from issues that limit one’s dream.<br/> The company was started to serve everyone in need of POF and make it seamless with the<br/> best rates in the industry. </span>
@@ -29,9 +30,9 @@ const About = () => {
 
         <section className="reason">
             <h2 style={{color: '#1d00ff', textAlign: 'center', fontSize: '42px',  fontWeight: '800', padding: '20px'}}> Why Choose Easepath? </h2>
-            <p style={{fontSize: '18px', textAlign: 'center', lineHeight: '29px'}}> Easepath international is a company that is established to facilitate access to financing one's<br/> dream tailored to suit every financial need at the lowest interest rate. </p>
-            <br/><br/><br/>
-            <div className="visionandmission" style={{display: 'flex', justifyContent: 'space-evenly' }}>
+            <p className='spacingp' style={{fontSize: '18px', textAlign: 'center', lineHeight: '29px'}}> Easepath international is a company that is established to facilitate access to financing one's<br/> dream tailored to suit every financial need at the lowest interest rate. </p>
+            
+            <div className="visionandmission">
                 <div className="vision" style={{textAlign: 'center'}}>
                     <h3 style={{color: '#1d00ff', fontSize: '23px'}}> Vision </h3>
                     <p style={{textAlign: 'center', fontSize: '16px'}}> To be the number go-to platform for POF before the second quarter of 2022 considering the way we<br/> have made it seamless for all parties that require this service with one of the most competitive rates<br/> in the market. </p>
@@ -49,7 +50,7 @@ const About = () => {
             <div className="overlay">
                 <h1 style={{textAlign: 'center', color: '#ffffff', fontSize: '40px', paddingTop: '200px'}}> How it Works </h1>
                 <p style={{textAlign: 'center', color: '#ffffff', fontSize: '20px'}}> Somethings are as easy as they seem. The process to your easy path<br/> begins with these processes. </p>
-                <br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/>
 
                 <div className="numbers" style={{display: "flex", justifyContent: "center"}}>
                     <div className="numberone">

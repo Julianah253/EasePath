@@ -1,5 +1,4 @@
 .button {
-  position: relative;
   border: 2px solid #4A33FF;
   background-color: #4A33FF;
   padding: 15px;
@@ -13,33 +12,6 @@
   color: #fff;
   font-weight: 700;
   font-size: 16px;
-}
-
-.button:hover a {
-  color: #A499FF; /* Add this line */
-}
-
-.button:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: 0;
-  background-color: #A499FF;
-  border-radius: 5px;
-  box-shadow: inset 2px 2px 2px 0px rgba(220, 196, 196, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.button:hover {
-  color: #fff;
-}
-
-.button:hover::after {
-  left: 0;
-  width: 100%;
 }
 
 .button:active {
